@@ -30,15 +30,6 @@ The core functionality of this tool includes:
 _**Note**: The files within the “data/” directory are provided as examples. You should replace them with your actual raster files. The Harmonized Sentinel-2 MSI Surface Reflectance data, which serves as the basis for various spectral indices, can be downloaded directly from Google Earth Engine by using this [code](https://code.earthengine.google.com/8d60a101dff9a29531c37233e6ceb2bc).
 
 
-## Files
-
--   `code/OPTRAM-ETc.py`: The main Python script.
--   `data/`: A folder containing example raster files (e.g., NDWI, NDVI, EVI, STR, VI).
--   `requirements.txt`: A list of required Python libraries.
--   `LICENSE`: The Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0) License file.
--   `README.md`: This file.
-
-
 ## Setup
 
 1.  **Clone the Repository:**
