@@ -28,6 +28,6 @@ Use code with caution.
 Markdown
 
 
-** Note: The files within the “data/” directory are provided as examples. You should replace them with your actual raster files. The Harmonized Sentinel-2 MSI Surface Reflectance data, which serves as the basis for various spectral indices, can be downloaded directly from [Google Earth Engine](https://code.earthengine.google.com/) by using this [code](https://code.earthengine.google.com/8d60a101dff9a29531c37233e6ceb2bc).
+_**Note**: The files within the “data/” directory are provided as examples. You should replace them with your actual raster files. The Harmonized Sentinel-2 MSI Surface Reflectance data, which serves as the basis for various spectral indices, can be downloaded directly from [Google Earth Engine](https://code.earthengine.google.com/) by using this [code](https://code.earthengine.google.com/8d60a101dff9a29531c37233e6ceb2bc).
 
 
