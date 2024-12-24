@@ -1,3 +1,11 @@
+[![Python](https://img.shields.io/badge/python-3.blue.svg)](https://www.python.org/downloads/)
+
+[![Libraries](https://img.shields.io/badge/libraries-numpy%20%7C%20pandas%20%7C%20rasterio%20%7C%20sklearn%20%7C%20scipy%20%7C%20matplotlib-yellow.svg)](https://github.com/MohammadAlavi81/STR-VI-Edge-Analysis/blob/main/requirements.txt)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
 # Automated STR-VI Edges Detection and Analysis
 This repository contains a Python script designed for automated detection and analysis of wet and dry edges within the Shortwave Infrared Transformed Reflectance (STR) - Vegetation Index (VI) space, commonly known as OPTRAM. The tool enables detailed characterization of land surface dynamics, facilitating the identification of water bodies and vegetation monitoring. Analyzing the relationship between STR and VI accurately identifies wet and dry boundaries, offering critical insights into surface moisture variations and vegetation conditions. Furthermore, this framework serves as a robust foundation for assessing evapotranspiration (ET) by integrating the STR-VI relationship with developed models and auxiliary datasets. Please refer to our publication for more information on estimating evapotranspiration (ET) using the OPTRAM-ETc model.
 
