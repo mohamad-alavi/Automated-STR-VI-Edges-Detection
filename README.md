@@ -13,7 +13,7 @@ This repository contains a Python script designed for automated detection and an
 
 The core functionality of this tool includes:
 
-1.  Data Preprocessing: Applying a series of spectral index-based filters (NDWI, NDVI, EVI, and STR) to prepare the STR data by masking out undesirable areas (e.g., non-vegetated surfaces or cloud-contaminated pixels).
+1.  Data Preprocessing: Applying a series of spectral index-based filters (NDWI, NDVI, EVI, and STR) to prepare the STR data by masking out undesirable areas.
 2.  **Vegetation Index (VI) Range Determination:** Automatically establishing the effective range for the VI based on its 1st and 99th percentile values, ensuring a robust analysis across varying landscapes.
 3.  **Point Density Filtering:** Identifying and selecting high-density point clusters within the STR-VI feature space, crucial for accurate edge detection, by using `filter_points_by_density` function.
 4.  **Edge Coefficient Calculation:** Employing linear regression to compute the slopes and intercepts of both wet and dry edges. The dry edge is determined from the lower bounds and wet edge from the upper bounds of STR values within moving VI intervals, thus defining the bounds of the feature space.
