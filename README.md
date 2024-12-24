@@ -4,6 +4,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE).
+
 
 
 # Automated STR-VI Edges Detection and Analysis
@@ -31,4 +33,75 @@ The core functionality of this tool includes:
 
 _**Note**: The files within the “data/” directory are provided as examples. You should replace them with your actual raster files. The Harmonized Sentinel-2 MSI Surface Reflectance data, which serves as the basis for various spectral indices, can be downloaded directly from Google Earth Engine by using this [code](https://code.earthengine.google.com/8d60a101dff9a29531c37233e6ceb2bc).
 
+## Setup
 
+1.  **Clone the Repository:**
+
+    ```bash
+    git clone [repository_url]
+    ```
+
+2.  **Navigate to the Project Directory:**
+
+    ```bash
+    cd STR-VI-Edge-Analysis
+    ```
+
+3.  **Install Required Libraries:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1.  **Data Placement:** Ensure that your raster files (e.g., NDWI, NDVI, EVI, STR, and the desired VI) are placed inside the `data/` directory.
+
+2.  **File Path Configuration:** Update the file paths within the `OPTRAM-ETc.py` script to reflect the locations of your specific raster files.
+
+3.  **Execution:**
+
+    ```bash
+    python code/OPTRAM-ETc.py
+    ```
+
+## Inputs
+
+The following raster files are required as inputs:
+-   `ndwi_path`: Path to the NDWI raster file.
+-   `ndvi_path`: Path to the NDVI raster file.
+-   `evi_path`: Path to the EVI raster file.
+-   `str_path`: Path to the STR raster file.
+-   `vi_path`: Path to the VI raster file (e.g., FVC, EVI, MBLL, SAVI, RENDVI).
+-   `output_path`: Path to save the filtered STR raster file.
+
+## Outputs
+
+Upon execution, the script will produce the following outputs:
+
+*   `New_STR_data.tif`: A GeoTIFF file containing the filtered Shortwave Infrared Transformed Reflectance (STR) data.
+*   `VI_data_plot.png`: A scatter plot visualizing the relationship between STR and VI, including the fitted wet and dry edge lines.
+*   **Console Output:** The script prints the calculated coefficients (slope, intercept, and R-squared value) for both wet and dry edges to the console.
+
+## Advanced Configuration
+
+* **Threshold Adjustments:** The code has predefined thresholds in the `apply_multiple_filters` function for each spectral indices (NDWI, NDVI, EVI, STR). these thresholds are:
+  -   `ndwi_threshold`: Threshold for NDWI filter, by default `-0.2`.
+  -   `ndvi_threshold`: Threshold for NDVI filter, by default `0`.
+  -   `evi_min_threshold`: Minimum threshold for EVI filter, by default `-1`.
+  -   `evi_max_threshold`: Maximum threshold for EVI filter, by default `1`.
+  -   `str_max_threshold`: Maximum threshold for STR filter, by default `12`.
+You can adjust these values based on the characteristics of your study area and data quality.
+
+## Libraries Used
+
+*   `numpy`: For numerical operations and array manipulation.
+*   `pandas`: For data analysis and handling of data frames.
+*   `rasterio`: For reading and writing geospatial raster data.
+*   `scikit-learn`: For machine learning models, in this case, linear regression.
+*   `scipy`: For advanced scientific computing, including interpolation and signal processing.
+*   `matplotlib`: For creating visualizations and plots.
+
+## License
+
+This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) - see the [LICENSE](LICENSE) file for details.
