@@ -1,6 +1,6 @@
 # Improvement and Development of the optical trapezoid model (OPTRAM)
 
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 
 [![Libraries](https://img.shields.io/badge/libraries-numpy%20%7C%20pandas%20%7C%20rasterio%20%7C%20sklearn%20%7C%20scipy%20%7C%20matplotlib-yellow.svg)](https://github.com/MohammadAlavi81/STR-VI-Edge-Analysis/blob/main/requirements.txt)
 
