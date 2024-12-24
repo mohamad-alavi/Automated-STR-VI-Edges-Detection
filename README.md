@@ -78,6 +78,8 @@ Upon execution, the script will produce the following outputs:
 
 *   `New_STR_data.tif`: A GeoTIFF file containing the filtered Shortwave Infrared Transformed Reflectance (STR) data.
 *   `VI_data_plot.png`: A scatter plot visualizing the relationship between STR and VI, including the fitted wet and dry edge lines.
+*   ![FVC_20m_2018-2019](https://github.com/user-attachments/assets/ee4103f1-728d-4efc-a60c-5b14e0c7f471)
+*   
 *   **Console Output:** The script prints the calculated coefficients (slope, intercept, and R-squared value) for both wet and dry edges to the console.
 
 ## Advanced Configuration
