@@ -21,11 +21,27 @@ The core functionality of this tool includes:
 *   **Density-Based Edge Detection:** Utilizes point density to refine edge detection.
 *   **Comprehensive Visualization:** Produces informative scatter plots for effective analysis.
 
+
 ## Repository Structure
 content_copy
 download
 Use code with caution.
 Markdown
+
+STR-VI-Edge-Analysis/
+├── code/
+│ └── OPTRAM-ETc.py # Main Python script
+├── data/
+│ ├── NDWI_data.tif # Example NDWI raster file
+│ ├── NDVI_data.tif # Example NDVI raster file
+│ ├── EVI_data.tif # Example EVI raster file
+│ ├── STR_data.tif # Example STR raster file
+│ └── MBLL_data.tif # Example MBLL raster file
+│ └── sample_data_images/ # Example image file to show in README
+| ├── sample_image_STR.png
+| └── sample_image_VI.png
+├── requirements.txt # Python library dependencies
+└── README.md # This README file
 
 
 _**Note**: The files within the “data/” directory are provided as examples. You should replace them with your actual raster files. The Harmonized Sentinel-2 MSI Surface Reflectance data, which serves as the basis for various spectral indices, can be downloaded directly from Google Earth Engine by using this [code](https://code.earthengine.google.com/8d60a101dff9a29531c37233e6ceb2bc).
