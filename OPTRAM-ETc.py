@@ -7,7 +7,7 @@ This code utilizes the numpy, pandas, rasterio, sklearn, scipy, and matplotlib l
 The code first applies multiple filters on raster data, then determines the VI range using percentiles, and finally computes the coefficients of wet and dry edges using linear regression and visualizes them with a scatter plot.
 
 Author: Mohammad Alavi 
-Date Created: 2023/12/11
+Date Created: 2024/12/11
 
 Inputs:
     - ndwi_path: Path to the NDWI raster file
